@@ -2,25 +2,25 @@
 
 ### Objective:
 
-The app enables users to "chat" with a SQL database (either SQLite or MySQL) by asking questions in natural language. The system interprets the queries, retrieves the relevant data, and provides answers in a conversational manner.
+IT enables users to "chat" with a SQL database (either SQLite or MySQL) by asking questions in natural language. The system interprets the queries, retrieves the relevant data, and provides answers in a conversational manner.
 
 ### Key Features:
 
 1. Database Connectivity: Users can choose between a local SQLite database (student.db) or connect to a MySQL database by providing credentials (host, user, password, and database name).
 
-2. LangChain SQL Agent: The app uses LangChain's SQLDatabaseToolkit and create_sql_agent to create an AI agent capable of understanding and executing SQL queries based on user input.
+2. LangChain SQL Agent: It uses LangChain's SQLDatabaseToolkit and create_sql_agent to create an AI agent capable of understanding and executing SQL queries based on user input.
 
-3. Groq API Integration: The app leverages the Groq API (with the Llama3-8b-8192 model) as the underlying language model to process natural language queries and generate SQL queries.
+3. Groq API Integration: This leverages the Groq API (with the Llama3-8b-8192 model) as the underlying language model to process natural language queries and generate SQL queries.
 
-4. Streamlit Interface: The app provides an interactive chat interface where users can ask questions, and the agent responds with data fetched from the database. The agent's thought      process is displayed in real-time using StreamlitCallbackHandler.
+4. Streamlit Interface: This provides an interactive chat interface where users can ask questions, and the agent responds with data fetched from the database. The agent's thought      process is displayed in real-time using StreamlitCallbackHandler.
 
 ### Workflow:
 
 * Users select the database type (SQLite or MySQL) and provide necessary credentials.
 
-* The app connects to the database using SQLAlchemy and configures the LangChain SQL toolkit.
+* It connects to the database using SQLAlchemy and configures the LangChain SQL toolkit.
 
-* Users input natural language queries (e.g., "Show me all students with grades above 90").
+* Users input natural language queries (e.g., "Show me all employee names that starts with "S").
 
 * The LangChain agent interprets the query, generates and executes the corresponding SQL query, and returns the results in a conversational format.
 
