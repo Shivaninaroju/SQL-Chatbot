@@ -1,6 +1,6 @@
 # Gen AI project - Chat with SQL DB with Langchain SQLTookit and Agent
 
-### Objective:
+## Objective:
 
 IT enables users to "chat" with a SQL database (either SQLite or MySQL) by asking questions in natural language. The system interprets the queries, retrieves the relevant data, and provides answers in a conversational manner.
 
