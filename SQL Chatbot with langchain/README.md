@@ -1,4 +1,4 @@
-# Gen AI project - Chat with SQL DB with Langchain SQLTookit and Agent
+Gen AI project - Chat with SQL DB with Langchain SQLTookit and Agent
 
 ### Objective:
 
